@@ -2,7 +2,7 @@ let select = document.querySelector('select');
 let list = document.querySelector('ul');
 let h2 = document.querySelector('h2');
 select.value = 'January';
-h2.textContent = 'January has 31 days.';
+h2.textContent = 'January';
 
 select.addEventListener('change', displayDays);
 
@@ -16,7 +16,7 @@ function displayDays() {
         days = 30;
     }
 
-    h2.textContent = `${month} has ${days} days.`;
+    h2.textContent = month;
 
     createCalendar(days, month);
 }
